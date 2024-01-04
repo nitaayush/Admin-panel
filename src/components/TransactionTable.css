@@ -1,0 +1,75 @@
+/* src/components/TransactionTable.css */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+.filter-container {
+    padding: 10px;
+    display: flex;
+
+    .date-from,
+    .to-from {
+        width: 150px;
+        display: flex;
+        flex-direction: column;
+
+        label {
+            text-align: initial;
+            margin-bottom: 10px;
+        }
+    }
+
+    .branch-filter,
+    .status-filter,
+    .type-filter {
+        position: relative;
+        top: 22px;
+        margin-right: 30px;
+
+    }
+
+    .id-filter {
+        display: flex;
+        align-items: center;
+        position: relative;
+        top: 5px;
+    }
+
+}
+
+.close-img {
+    width: 15px;
+    height: 15px;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+.sort-img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    cursor: pointer;
+    position: relative;
+    top: 4px;
+}
+
+.sort-container {
+    cursor: pointer;
+}
